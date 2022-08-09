@@ -67,8 +67,4 @@ public class ExchangeSort {
         }
     }
 
-    public void getSwapCount(){
-        System.out.println(swapCount);
-    }
-
 }
