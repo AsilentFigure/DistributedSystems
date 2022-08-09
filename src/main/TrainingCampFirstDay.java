@@ -1,5 +1,7 @@
 package main;
 
+import solution.FindMedianSortedArrays;
+
 import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -13,9 +15,10 @@ import java.util.List;
 public class TrainingCampFirstDay {
 
     public static void main(String[] args) {
-        int a[] = { 2, 4, 6, 9};
-        int b[] = {-3, -3, -2};
-        System.out.println(findMedianSortedArrays(a, b));
+        int a[] = {1, 3};
+        int b[] = {2};
+        FindMedianSortedArrays findMedianSortedArrays = new FindMedianSortedArrays();
+        System.out.println(findMedianSortedArrays.findMedianSortedArrays(a, b));
     }
 
     void abcSortTwice(int nums[]){
@@ -73,28 +76,30 @@ public class TrainingCampFirstDay {
         return result;
     }
 
-    public static double findMedianSortedArrays(int[] A, int[] B) {
-        int m = A.length;
-        int n = B.length;
-        int len = m + n;
-        int left = -1, right = -1;
-        int aStart = 0, bStart = 0;
-        for (int i = 0; i <= len / 2; i++) {
-            left = right;
-            if (aStart < m && (bStart >= n || A[aStart] < B[bStart])) {
-                right = A[aStart++];
-            } else {
-                right = B[bStart++];
-            }
-        }
-        if ((len & 1) == 0)
-            return (left + right) / 2.0;
-        else
-            return right;
-    }
-
-    /*作者：windliang
-    链接：https://leetcode.cn/problems/median-of-two-sorted-arrays/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-w-2/
-    来源：力扣（LeetCode）
-    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
