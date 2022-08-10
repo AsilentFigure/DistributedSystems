@@ -1,5 +1,12 @@
 package main;
 
+import solution.FindMedianSortedArrays;
+
+import javax.sound.midi.Soundbank;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 /**
  * @author ASilentFigure
  * @project DistributedSystems
@@ -8,9 +15,10 @@ package main;
 public class TrainingCampFirstDay {
 
     public static void main(String[] args) {
-        int a[] = { 1};
-        int b[] = { 2, 3, 4, 5, 6};
-        System.out.println(getKthElement(a, b, 4));
+        int a[] = {1, 3};
+        int b[] = {2};
+        FindMedianSortedArrays findMedianSortedArrays = new FindMedianSortedArrays();
+        System.out.println(findMedianSortedArrays.findMedianSortedArrays(a, b));
     }
 
     void abcSortTwice(int nums[]){
@@ -68,44 +76,30 @@ public class TrainingCampFirstDay {
         return result;
     }
 
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        double result = 0;
-        int m = nums1.length, n = nums2.length;
-        int len = m + n;
-        if( (len & 1) == 0) {
-            result = (getKthElement(nums1, nums2, len / 2) + getKthElement(nums1, nums2, len / 2 + 1)) / 2.0;
-        }else {
-            result = getKthElement(nums1, nums2, len / 2 + 1);
-        }
-        return result;
-    }
-
-    public static int getKthElement(int[] nums1, int[] nums2, int k){
-        int m = nums1.length, n = nums2.length;
-        int index1 = 0 , index2 = 0;
-        while (true){
-
-            if(index1 == m){
-                return nums2[k + index2 - 1];
-            }
-            if(index2 == n){
-                return nums1[k + index1 - 1];
-            }
-            if(1 == k){
-                return Math.min(nums1[index1], nums2[index2]);
-            }
-
-            int half = k / 2;
-            int newIndex1 = Math.min(index1 + half, m) - 1;
-            int newIndex2 = Math.min(index2 + half, n) - 1;
-            int povt1 = nums1[newIndex1], povt2 = nums2[newIndex2];
-            if(povt1 <= povt2){
-                k -= (newIndex1 - index1 + 1);
-                index1 = newIndex1 + 1;
-            } else {
-                k -= (newIndex2 - index2 + 1);
-                index2 = newIndex2 + 1;
-            }
-        }
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
