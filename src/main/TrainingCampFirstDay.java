@@ -1,5 +1,6 @@
 package main;
 
+import solution.CountConsistentStrings;
 import solution.FindMedianSortedArrays;
 
 import javax.sound.midi.Soundbank;
@@ -15,10 +16,10 @@ import java.util.List;
 public class TrainingCampFirstDay {
 
     public static void main(String[] args) {
-        int a[] = {1, 3};
-        int b[] = {2};
-        FindMedianSortedArrays findMedianSortedArrays = new FindMedianSortedArrays();
-        System.out.println(findMedianSortedArrays.findMedianSortedArrays(a, b));
+        String allowed = "ab";
+        String [] words = {"ad", "bd", "aaab", "baa", "badab"};
+        CountConsistentStrings countConsistentStrings = new CountConsistentStrings();
+        System.out.println(countConsistentStrings.countConsistentStrings(allowed, words));
     }
 
     void abcSortTwice(int nums[]){
