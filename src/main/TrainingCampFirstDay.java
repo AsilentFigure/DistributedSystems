@@ -1,9 +1,12 @@
 package main;
 
+import solution.CheckIfPangram;
 import solution.CountConsistentStrings;
 import solution.FindMedianSortedArrays;
+import solution.SmallerNumbersThanCurrent;
 
 import javax.sound.midi.Soundbank;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -16,10 +19,8 @@ import java.util.List;
 public class TrainingCampFirstDay {
 
     public static void main(String[] args) {
-        String allowed = "ab";
-        String [] words = {"ad", "bd", "aaab", "baa", "badab"};
-        CountConsistentStrings countConsistentStrings = new CountConsistentStrings();
-        System.out.println(countConsistentStrings.countConsistentStrings(allowed, words));
+        CheckIfPangram checkIfPangram = new CheckIfPangram();
+        checkIfPangram.checkIfPangram("dad");
     }
 
     void abcSortTwice(int nums[]){
