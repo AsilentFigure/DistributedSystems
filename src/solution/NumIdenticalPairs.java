@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ *1512. 好数对的数目
  * @author ASilentFigure
  * @project DistributedSystems
  * @date 2022/8/10 16:13

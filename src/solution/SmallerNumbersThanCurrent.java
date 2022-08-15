@@ -2,9 +2,9 @@ package solution;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
+ *1365. 有多少小于当前数字的数字
  * @author ASilentFigure
  * @project DistributedSystems
  * @date 2022/8/11 9:26

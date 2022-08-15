@@ -1,10 +1,10 @@
 package solution;
 
-import java.beans.beancontext.BeanContext;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
+ *1684. 统计一致字符串的数目
  * @author ASilentFigure
  * @project DistributedSystems
  * @date 2022/8/10 16:31

@@ -3,6 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
+ *1619. 删除某些元素后的数组均值
  * @author ASilentFigure
  * @project DistributedSystems
  * @date 2022/8/12 11:02

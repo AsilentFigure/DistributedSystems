@@ -2,7 +2,13 @@ package solution;
 
 import java.util.Arrays;
 import java.util.Random;
-
+/**
+ * 912. 排序数组
+ * @author ASilentFigure
+ * @return 
+ * @throws
+ * @date 2022/8/15 15:49
+ */
 public class SortArray {
 
     public int[] sortArray(int[] nums) {

@@ -2,7 +2,13 @@ package solution;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * 287.寻找重复数
+ * @author ASilentFigure
+ * @return 
+ * @throws
+ * @date 2022/8/15 15:37
+ */
 public class FindDuplicate {
 
     public int findDuplicate1(int[] nums) {

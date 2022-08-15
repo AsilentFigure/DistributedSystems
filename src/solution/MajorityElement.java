@@ -2,7 +2,13 @@ package solution;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ *169.多数元素
+ * @author ASilentFigure
+ * @return
+ * @throws
+ * @date 2022/8/15 15:24
+ */
 public class MajorityElement {
 
     public int majorityElement1(int[] nums) {

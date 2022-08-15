@@ -1,6 +1,7 @@
 package solution;
 
 /**
+ *1491. 去掉最低工资和最高工资后的工资平均值
  * @author ASilentFigure
  * @project DistributedSystems
  * @date 2022/8/12 10:35

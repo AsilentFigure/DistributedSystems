@@ -3,6 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
+ *1502. 判断能否形成等差数列
  * @author ASilentFigure
  * @project DistributedSystems
  * @date 2022/8/12 10:26

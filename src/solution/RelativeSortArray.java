@@ -2,7 +2,13 @@ package solution;
 
 import java.util.*;
 import java.util.stream.Collectors;
-
+/**
+ * 剑指 Offer II 075. 数组相对排序
+ * @author ASilentFigure
+ * @return 
+ * @throws
+ * @date 2022/8/15 15:37
+ */
 public class RelativeSortArray {
 
     public int[] relativeSortArray(int[] arr1, int[] arr2) {

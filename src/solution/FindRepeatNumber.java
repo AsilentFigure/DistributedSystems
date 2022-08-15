@@ -2,7 +2,13 @@ package solution;
 
 import java.util.HashSet;
 import java.util.Set;
-
+/**
+ * 剑指 Offer 03. 数组中重复的数字
+ * @author ASilentFigure
+ * @return 
+ * @throws
+ * @date 2022/8/15 15:29
+ */
 public class FindRepeatNumber {
 
     public int findRepeatNumber1(int[] nums) {

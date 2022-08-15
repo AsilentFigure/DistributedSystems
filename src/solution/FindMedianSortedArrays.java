@@ -1,5 +1,11 @@
 package solution;
-
+/**
+ * 4. 寻找两个正序数组的中位数
+ * @author ASilentFigure
+ * @return 
+ * @throws
+ * @date 2022/8/15 15:44
+ */
 public class FindMedianSortedArrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         double result = 0;
