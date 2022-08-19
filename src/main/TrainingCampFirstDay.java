@@ -2,7 +2,6 @@ package main;
 
 import solution.*;
 
-import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -16,9 +15,9 @@ import java.util.List;
 public class TrainingCampFirstDay {
 
     public static void main(String[] args) {
-        int[] nums = {1, 1, 0, 2, 1, 2, 0, 1, 0, 2};
-        SortColors sortColors = new SortColors();
-        sortColors.sortColors(nums);
+        int[] nums = {3, -2, 3, -10, 2, 3, 1, 4};
+        MergeSort mergeSort = new MergeSort();
+        System.out.println(Arrays.toString(mergeSort.sortArray(nums)));
     }
 
     void abcSortTwice(int nums[]){
